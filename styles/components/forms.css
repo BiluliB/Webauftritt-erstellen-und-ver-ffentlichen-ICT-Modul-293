@@ -1,0 +1,98 @@
+#kontaktformular-section {
+  width: 100%;
+  margin-top: 100px;
+  word-break: break-all;
+}
+
+#kontaktformular {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#kontaktformular .form-group:not(.row) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#kontaktformular .form-group > input {
+  flex: 1;
+  min-width: calc(50% - 4px);
+  max-width: calc(50% - 4px);
+}
+
+#kontaktformular .form-group.thema {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#kontaktformular .form-group.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#kontaktformular .form-group.row > input {
+  flex: 1;
+  min-width: 120px;
+  margin-bottom: 10px;
+  margin-right: 8px;
+}
+#kontaktformular input,
+#kontaktformular textarea,
+#kontaktformular select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#kontaktformular textarea {
+  height: 150px;
+  resize: vertical;
+  width: 100%;
+}
+
+#kontaktformular button[type="submit"] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+#kontaktformular button[type="submit"]:hover {
+  background-color: #555;
+}
+
+input.error-input,
+textarea.error-input,
+select.error-input {
+  border: 2px solid red !important;
+}
+
+.form-errors {
+  color: red;
+  border-color: red;
+  background-color: rgba(255, 0, 0, 0.135);
+  margin-bottom: 15px;
+}
+
+.form-success {
+  color: green;
+  border-color: green;
+  background-color: rgba(0, 128, 0, 0.135);
+  margin-bottom: 15px;
+}
+
+.form-messages {
+  padding: 10px;
+  margin: 0;
+  border-radius: 4px;
+  border: 1px solid;
+  font-size: 1.3rem;
+}

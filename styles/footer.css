@@ -1,0 +1,22 @@
+#footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--light-blue);
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s;
+}
+
+footer a:hover {
+  border-bottom-color: var(--light-blue);
+}

@@ -1,0 +1,28 @@
+/* Variablen und Farbdefinitionen */
+@import "variables.css";
+
+/* CSS-Reset, um Konsistenz über Browser zu erreichen */
+@import "reset.css";
+
+/* Typografie-Definitionen für die gesamte Seite */
+@import "typography.css";
+
+/* Grundlegende Layout-Definitionen */
+@import "layout.css";
+
+/* Komponentenspezifische Stile */
+@import "components/navigation.css";
+@import "components/buttons.css";
+@import "components/forms.css";
+@import "components/tables.css";
+@import "components/lists.css";
+@import "components/content.css";
+
+/* Hilfsklassen und Utilities */
+@import "utilities.css";
+
+/* Responsive Design Anpassungen */
+@import "responsive.css";
+
+/* Footer-Styles */
+@import "footer.css";

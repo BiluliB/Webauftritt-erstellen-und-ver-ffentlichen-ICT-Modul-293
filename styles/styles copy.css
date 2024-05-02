@@ -1,0 +1,634 @@
+/* Farbpalette */
+:root {
+  --cream: #fae6b1;
+  --orange: #ffa101;
+  --light-blue: #b3dee5;
+  --dark-blue: #31525b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+body {
+  margin: 0;
+}
+
+/* Basis-Styles */
+h1,
+h2,
+h3,
+h4,
+p,
+address {
+  margin: 0;
+  padding: 0.3rem;
+  white-space: normal;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+th,
+td {
+  font-size: 1.3rem;
+}
+
+address {
+  font-size: 1.3rem;
+  line-height: 2.2;
+  white-space: nowrap; /* Hält die E-Mail in einer Zeile, solange es der Container erlaubt */
+  overflow-wrap: normal;
+}
+
+input,
+textarea,
+button,
+select {
+  font-size: 1.3rem;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  word-break: break-word;
+}
+
+/*!
+ * Bootstrap Grid v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.container {
+  width: 100%;
+  padding-right: calc(1.5rem * 0.5);
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Arial", sans-serif;
+  color: var(--dark-blue);
+  background-color: var(--cream);
+}
+
+/* Header und Navigation */
+header {
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.inner-nav a {
+  font-size: 1.3rem;
+}
+
+#logo-container {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#logo-container #subtitle {
+  font-size: 0.8em;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+.inner-nav a {
+  text-decoration: none;
+  color: white; /* Oder eine andere Farbe, falls gewünscht */
+  padding-bottom: 5px; /* Platz für den Strich */
+  border-bottom: 3px solid transparent; /* Unsichtbarer Strich */
+  transition: border-color 0.3s; /* Sanfte Übergänge */
+}
+
+.inner-nav a:hover {
+  border-bottom-color: var(--light-blue); /* Strichfarbe beim Hovern */
+}
+
+.inner-nav a.active {
+  border-bottom-color: var(--orange); /* Strichfarbe für aktiven Link */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 15%;
+}
+
+.inner-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hauptbild */
+#header-image {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 75%;
+  margin: auto;
+}
+
+.content-section h2 {
+  text-align: left;
+  font-size: 3rem;
+  word-break: break-all;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: center;
+}
+
+.heading-container {
+  margin-bottom: 20px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 600px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.image-content {
+  max-width: 40%;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+}
+
+.content-container-uebermich {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.image-content-uebermich {
+  max-width: 40%;
+}
+
+.image-content-uebermich img {
+  max-width: 50%;
+  height: auto;
+}
+
+/* .content-container-taetikeitsgebiete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.image-content-taetikeitsgebiete {
+  max-width: 40%;
+}
+
+.image-content-taetikeitsgebiete img {
+  max-width: 50%;
+  height: auto;
+} */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: lightgray;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+tr:nth-child(even) {
+  background-color: var(--light-blue);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.custom-bullets li::before {
+  content: "•";
+  color: #555;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.custom-bullets li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+/* Container für die Listen */
+.publications-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.entscheidanmerkungen,
+.article-list {
+  flex: 1;
+  min-width: 300px;
+  font-size: 1.3rem;
+}
+
+.entscheidanmerkungen {
+  margin-right: 60px;
+}
+
+/* ===================================*/
+.kontakt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.kontakt-info {
+  width: 100%;
+  text-align: left;
+  word-break: break-all;
+}
+
+.map-content {
+  grid-column: 3 / span 2;
+}
+
+@media (max-width: 768px) {
+  .kontakt-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-content {
+    grid-column: auto;
+  }
+
+  address {
+    white-space: normal;
+    word-break: break-all;
+  }
+}
+
+#kontaktformular-section {
+  width: 100%;
+  margin-top: 100px;
+  word-break: break-all;
+}
+
+#kontaktformular {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#kontaktformular .form-group:not(.row) {
+  display: flex; /* Macht den Container flexibel */
+  flex-wrap: wrap; /* Ermöglicht den Umbruch der Inhalte */
+}
+
+#kontaktformular .form-group > input {
+  flex: 1; /* Ermöglicht eine flexible Breitenanpassung */
+  min-width: calc(
+    50% - 4px
+  ); /* Setzt eine Mindestbreite, angepasst an zwei Spalten minus Margin */
+  max-width: calc(
+    50% - 4px
+  ); /* Begrenzt die maximale Breite, um Konsistenz zu gewährleisten */
+}
+
+#kontaktformular .form-group.thema {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#kontaktformular .form-group.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#kontaktformular .form-group.row > input {
+  flex: 1;
+  min-width: 120px;
+  margin-bottom: 10px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  #kontaktformular .form-group.row > input,
+  #kontaktformular .form-group:not(.row) > input {
+    min-width: 100%; /* Setzt die Mindestbreite auf 100% für kleinere Bildschirme */
+    max-width: 100%; /* Setzt die maximale Breite auf 100% für kleinere Bildschirme */
+    margin-right: 0; /* Korrigiert mögliche Margin-Probleme */
+  }
+}
+
+#kontaktformular input,
+#kontaktformular textarea,
+#kontaktformular select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#kontaktformular textarea {
+  height: 150px;
+  resize: vertical;
+  width: 100%;
+}
+
+#kontaktformular button[type="submit"] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+#kontaktformular button[type="submit"]:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  #kontaktformular .form-group.row {
+    flex-direction: column;
+  }
+
+  #kontaktformular .form-group:nth-child(1) > input {
+    flex-basis: 100%;
+  }
+}
+
+/*====================================*/
+
+/* Footer */
+footer {
+  background-color: var(--dark-blue);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--light-blue);
+  padding-bottom: 5px; /* Platz für den Unterstrich */
+  border-bottom: 3px solid transparent; /* Erstellt einen unsichtbaren Unterstrich */
+  transition: border-color 0.3s;
+}
+
+footer a:hover {
+  border-bottom-color: var(
+    --light-blue
+  ); /* Ändert die Farbe des Unterstrichs beim Hovern */
+}
+
+@media (max-width: 767px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content,
+  .image-content {
+    padding-right: 0;
+    max-width: 100%;
+  }
+
+  .text-content {
+    margin-right: 0;
+  }
+
+  .image-content {
+    margin-top: 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin: auto;
+    align-items: center; /* Zentriert die Navigationselemente */
+  }
+
+  nav li {
+    margin-bottom: 0.5rem; /* Fügt einen Abstand nach jedem Element hinzu */
+  }
+
+  nav a {
+    font-size: 1.2rem; /* Verkleinert die Navigationselemente */
+  }
+
+  #logo-container h1 {
+    font-size: 1.4rem;
+  }
+
+  #logo-container #subtitle {
+    font-size: 0.8rem; /* Verkleinert die Überschrift und Untertitel */
+  }
+
+  .logo {
+    width: 50px; /* Verkleinert das Logo */
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    float: none;
+    margin: 1rem;
+  }
+
+  .contact-form-container {
+    width: 90%;
+  }
+
+  .content-section {
+    flex-direction: column;
+  }
+
+  .text-content,
+  .map-content {
+    flex-grow: 0;
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .map-content {
+    padding-left: 0;
+  }
+
+  .map-content iframe {
+    height: 300px; /* Passt die Höhe des iframes an */
+  }
+
+  /* Responsive Footer */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p {
+    margin-bottom: 0.5rem; /* Fügt einen Abstand nach jedem Element hinzu */
+  }
+
+  footer a {
+    font-size: 1.2rem; /* Verkleinert die Links */
+  }
+}
+
+input.error-input,
+textarea.error-input,
+select.error-input {
+  border: 2px solid red !important;
+}
+
+.form-errors {
+  color: red;
+  border-color: red;
+  background-color: rgba(255, 0, 0, 0.135);
+  margin-bottom: 15px;
+}
+
+.form-success {
+  color: green;
+  border-color: green;
+  background-color: rgba(0, 128, 0, 0.135);
+  margin-bottom: 15px;
+}
+
+.form-messages {
+  padding: 10px;
+  margin: 0;
+  border-radius: 4px;
+  border: 1px solid;
+  font-size: 1.3rem;
+}

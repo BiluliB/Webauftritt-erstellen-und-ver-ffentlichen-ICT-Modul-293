@@ -1,0 +1,188 @@
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kontakt-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-content {
+    grid-column: auto;
+  }
+
+  address {
+    white-space: normal;
+    word-break: break-all;
+  }
+
+  #kontaktformular .form-group.row {
+    flex-direction: column;
+  }
+
+  #kontaktformular .form-group:nth-child(1) > input {
+    flex-basis: 100%;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content,
+  .image-content {
+    padding-right: 0;
+    max-width: 100%;
+  }
+
+  .text-content {
+    margin-right: 0;
+  }
+
+  .image-content {
+    margin-top: 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin: auto;
+    align-items: center; /* Zentriert die Navigationselemente */
+  }
+
+  nav li {
+    margin-bottom: 0.5rem; /* Fügt einen Abstand nach jedem Element hinzu */
+  }
+
+  nav a {
+    font-size: 1.2rem; /* Verkleinert die Navigationselemente */
+  }
+
+  #logo-container h1 {
+    font-size: 1.4rem;
+  }
+
+  #logo-container #subtitle {
+    font-size: 0.8rem; /* Verkleinert die Überschrift und Untertitel */
+  }
+
+  .logo {
+    width: 50px; /* Verkleinert das Logo */
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    float: none;
+    margin: 1rem;
+  }
+
+  .contact-form-container {
+    width: 90%;
+  }
+
+  .content-section {
+    flex-direction: column;
+  }
+
+  .text-content,
+  .map-content {
+    flex-grow: 0;
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .map-content {
+    padding-left: 0;
+  }
+
+  .map-content iframe {
+    height: 300px; /* Passt die Höhe des iframes an */
+  }
+
+  /* Responsive Footer */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p {
+    margin-bottom: 0.5rem; /* Fügt einen Abstand nach jedem Element hinzu */
+  }
+
+  footer a {
+    font-size: 1.2rem; /* Verkleinert die Links */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #kontaktformular .form-group.row > input,
+  #kontaktformular .form-group:not(.row) > input {
+    min-width: 100%; /* Setzt die Mindestbreite auf 100% für kleinere Bildschirme */
+    max-width: 100%; /* Setzt die maximale Breite auf 100% für kleinere Bildschirme */
+    margin-right: 0; /* Korrigiert mögliche Margin-Probleme */
+  }
+  .burger {
+    display: block;
+  }
+
+  .inner-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .inner-nav a {
+    padding: 10px 25px; /* Erhöht den Abstand für Touch-Geräte */
+  }
+
+  .inner-nav.active {
+    display: flex; /* Zeigt die Links an, wenn das Menü aktiviert ist */
+    position: absolute;
+    top: 100%; /* Positioniert das Menü unterhalb der Navbar */
+    background-color: #333; /* Hintergrundfarbe der Navigationsleiste */
+    width: auto;
+    padding: 0.5rem 1rem; /* Fügt innen einen kleinen Abstand hinzu, um es optisch ansprechender zu machen */
+  }
+
+  .inner-nav span {
+    /* Trennstriche ausblenden */
+    display: none;
+  }
+
+  nav {
+    position: relative;
+    padding: 0.5rem 1rem;
+  }
+}

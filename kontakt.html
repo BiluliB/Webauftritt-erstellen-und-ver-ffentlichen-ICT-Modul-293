@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="shortcut icon" type="image/jpg" href="/images/tabIcon.jpg" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <!-- TEMPLATE_START: templates\header.html -->
+    <header>
+      <div class="container">
+        <div id="logo-container">
+          <img
+            src="/images/logo.png"
+            alt="Logo Advokatur Muster"
+            class="logo"
+          />
+          <h1>Advokatur Muster</h1>
+          <p id="subtitle">R E C H T S A N W Ä L T I N</p>
+        </div>
+        <nav>
+          <button class="burger">☰</button>
+          <div class="inner-nav">
+            <a href="index.html">Home</a>
+            <span>|</span>
+            <a href="uebermich.html">Über mich</a>
+            <span>|</span>
+            <a href="taetigkeitsgebiete.html">Tätigkeitsgebiete</a>
+            <span>|</span>
+            <a href="publikationen.html">Publikationen</a>
+            <span>|</span>
+            <a href="kontakt.html">Kontakt</a>
+          </div>
+        </nav>
+      </div>
+      <script src="/scripts/navbar.js"></script>
+    </header>
+
+    <!-- TEMPLATE_END: templates\header.html -->
+
+    <img id="header-image" src="/images/kontaktHeader.png" alt="Bürobild" />
+    <main>
+      <section id="kontakt-info" class="content-section">
+        <div class="heading-container">
+          <h2>Kontakt</h2>
+        </div>
+        <div class="kontakt-grid">
+          <div class="kontakt-info">
+            <h3>Adresse</h3>
+            <address>
+              Advokatur Muster<br />
+              Musterstrasse 12<br />
+              Postfach<br />
+              CH-4058 Basel<br /><br />
+              Telefon: +41 61 122 22 22<br />
+              Mobil: +41 76 123 45 67<br /><br />
+              E-Mail:
+              <a href="mailto:muster@advokatur-muster.ch"
+                >muster@advokatur-muster.ch</a
+              >
+            </address>
+          </div>
+          <div class="map-content">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43078.322774840664!2d7.582947301971769!3d47.56009919249745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b75e734b6e65%3A0x76abbc1d0f6aa2fe!2sBasel-Stadt!5e0!3m2!1sde!2sch!4v1714635235982!5m2!1sde!2sch"
+              style="border: 0; width: 100%; height: 450px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <section id="kontaktformular-section">
+        <h3>Kontaktformular</h3>
+        <div class="contact-form-container">
+          <form id="kontaktformular">
+            <div id="form-errors" class="form-errors"></div>
+            <div class="form-group thema">
+              <select id="thema" name="thema" required>
+                <option value="">Thema wählen*</option>
+                <option value="Strafrecht">Strafrecht</option>
+                <option value="Verkehrsrecht">Verkehrsrecht</option>
+                <option value="Migrationsrecht">Migrationsrecht</option>
+                <option value="Verwaltungsrecht">Verwaltungsrecht</option>
+              </select>
+              <span class="error-message" id="thema-error"></span>
+            </div>
+
+            <div class="form-group">
+              <input type="text" id="firma" name="firma" placeholder="Firma" />
+              <span class="error-message" id="firma-error"></span>
+            </div>
+
+            <div class="form-group row">
+              <input
+                type="text"
+                id="vorname"
+                name="vorname"
+                placeholder="Vorname*"
+                required
+              />
+              <span class="error-message" id="vorname-error"></span>
+
+              <input
+                type="text"
+                id="nachname"
+                name="nachname"
+                placeholder="Nachname*"
+                required
+              />
+              <span class="error-message" id="nachname-error"></span>
+
+              <input
+                type="tel"
+                id="telefon"
+                name="telefon"
+                placeholder="Telefonnummer"
+              />
+              <span class="error-message" id="telefon-error"></span>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-Mailadresse*"
+                required
+              />
+              <span class="error-message" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="nachricht"
+                name="nachricht"
+                placeholder="Ihre Nachricht."
+                required
+              ></textarea>
+              <span class="error-message" id="nachricht-error"></span>
+            </div>
+            <button type="submit">Nachricht senden</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- TEMPLATE_START: templates\footer.html -->
+    <footer>
+      <div class="container">
+        <div id="footer-content">
+          <p>© 2024, Advokatur Muster</p>
+          <p>
+            <a href="kontakt.html">Kontakt</a> |
+            <a href="rechtliche-hinweise.html">Rechtliche Hinweise</a> |
+            <a href="datenschutz.html">Datenschutz</a> |
+            <a href="impressum.html">Impressum</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- TEMPLATE_END: templates\footer.html -->
+    <script src="/scripts/formValidation.js"></script>
+  </body>
+</html>

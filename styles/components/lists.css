@@ -1,0 +1,19 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.custom-bullets li::before {
+  content: "•";
+  color: #555;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

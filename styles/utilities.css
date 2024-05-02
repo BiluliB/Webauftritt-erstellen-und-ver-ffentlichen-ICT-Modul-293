@@ -1,0 +1,62 @@
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  hyphens: auto;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.content-container-uebermich {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.custom-bullets li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.kontakt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.publications-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.map-content {
+  grid-column: 3 / span 2;
+}
+
+.entscheidanmerkungen,
+.article-list {
+  flex: 1;
+  min-width: 300px;
+  font-size: 1.3rem;
+}
+
+.entscheidanmerkungen {
+  margin-right: 60px;
+}
+
+.kontakt-info {
+  width: 100%;
+  text-align: left;
+  word-break: break-all;
+}
