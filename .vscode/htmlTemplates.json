@@ -1,0 +1,30 @@
+{
+    "templates": [
+        {
+            "path": "templates\\header.html",
+            "targets": [
+                "index.html",
+                "kontakt.html",
+                "publikationen.html",
+                "taetigkeitsgebiete.html",
+                "uebermich.html",
+                "impressum.html",
+                "rechtliche-hinweise.html",
+                "datenschutz.html"
+            ]
+        },
+        {
+            "path": "templates\\footer.html",
+            "targets": [
+                "uebermich.html",
+                "taetigkeitsgebiete.html",
+                "publikationen.html",
+                "kontakt.html",
+                "index.html",
+                "impressum.html",
+                "rechtliche-hinweise.html",
+                "datenschutz.html"
+            ]
+        }
+    ]
+}
